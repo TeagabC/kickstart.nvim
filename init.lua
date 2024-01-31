@@ -290,6 +290,18 @@ vim.o.clipboard = 'unnamedplus'
 -- Enable break indent
 vim.o.breakindent = true
 
+vim.o.autoindent = true
+
+vim.o.ts = 2
+
+vim.o.sw = 2
+
+vim.o.expandtab = true
+
+vim.o.nu = true
+
+vim.o.relativenumber = true
+
 -- Save undo history
 vim.o.undofile = true
 
@@ -434,7 +446,7 @@ vim.defer_fn(function()
     -- You can specify additional Treesitter modules here: -- For example: -- playground = {--enable = true,-- },
     modules = {},
     highlight = { enable = true },
-    indent = { enable = true },
+    indent = { enable = false },
     incremental_selection = {
       enable = true,
       keymaps = {
